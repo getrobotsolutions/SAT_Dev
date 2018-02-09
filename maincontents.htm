@@ -1,0 +1,68 @@
+﻿<!--
+//*****************************************************************************************
+// Contents Framework : Main Contents Part.
+//                      Date : 2014.10.28
+//
+//    (1) FC_ChangeAdMovie : FURO-D 의 경우, Contents(Flash)에서 선택한 광고 동영상을 Play함.
+//                   
+//          User Change : [Step 1] 
+//					      [Step 2] 
+//*****************************************************************************************
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<meta content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<style>
+<!-- 
+body {margin:0;padding:0;}
+#visible
+{
+overflow: hidden; 
+}
+-->
+
+</style>
+
+<!-- 기본으로 포함되어야 하는 js -->
+<script language="JavaScript" type="text/javascript" src="Scripts/FlashPlayer.js"></script>
+<script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+<script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+
+<!-- 추가적으로 포함되는 js -->
+<script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+
+function JSMain()
+{
+	StopBehavior();
+	StopSpeech();				//립싱크를 정지하기 위함.
+	StartHumanFollow('false');	//사람추적 Off..
+	SetVisualServoing('false'); //얼굴추적 Off..
+	
+}
+
+//--------------------------------------------------------------------------
+//-- Flash -> html : Flash에서 선택한 Movie를 html에서 Play 
+//--------------------------------------------------------------------------
+function FC_ChangeAdMovieHtml(strIdx)
+{
+	var movieObj = document.getElementById('MediaPlayer');
+	if(strIdx == "1") movieObj.src = "Movie/main1.mp4";
+	if(strIdx == "2") movieObj.src = "Movie/main2.mp4";
+	if(strIdx == "3") movieObj.src = "Movie/main3.mp4";
+	if(strIdx == "4") movieObj.src = "Movie/main4.mp4";
+	movieObj.play();
+}
+</script>
+</head>
+
+
+</body>
+
+<img src="front.png">
+</body>
+</html>
