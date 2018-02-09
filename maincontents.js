@@ -255,7 +255,7 @@ function Chea()
 	clearTimeout(tmChea);
 	
 	ChangeLanguage("english");
-	PlaySpeech("Information Technology Division would like to invite you to attend the 2014 adma IT at a Glance event, from Tuesday 28th October to Wednesday 29th October 2014. The first part of the event will be a series of presentations which will start on Tuesday 28th October 2014, 09:00 a.m. to 10:00 a.m. in the HQ auditorium, followed by an Exhibition on the HQ 1st Floor Lobby, which will continue till Wednesday 29th October 2014. This campaign is aimed at raising the level of collaboration, communication and alignment to smoothly achieve our common objectives as set by the Company vision. Communicating our goals with you supports our mission in today’s era of global connectivity. Please note that the presentations will start at 09:00 a.m. sharp. We therefore appreciate your early presence. ");
+	//PlaySpeech("Information Technology Division would like to invite you to attend the 2014 adma IT at a Glance event, from Tuesday 28th October to Wednesday 29th October 2014. The first part of the event will be a series of presentations which will start on Tuesday 28th October 2014, 09:00 a.m. to 10:00 a.m. in the HQ auditorium, followed by an Exhibition on the HQ 1st Floor Lobby, which will continue till Wednesday 29th October 2014. This campaign is aimed at raising the level of collaboration, communication and alignment to smoothly achieve our common objectives as set by the Company vision. Communicating our goals with you supports our mission in today’s era of global connectivity. Please note that the presentations will start at 09:00 a.m. sharp. We therefore appreciate your early presence. ");
 	
 	tmChea = setTimeout("Chea()", 180*1000);
 }
