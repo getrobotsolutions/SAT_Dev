@@ -57,12 +57,18 @@ function FC_ChangeAdMovieHtml(strIdx)
 	if(strIdx == "4") movieObj.src = "Movie/main4.mp4";
 	movieObj.play();
 }
+
+
+function speak()
+{
+    PlaySpeech("Welcome to the Airport");
+}
 </script>
 </head>
 
 
 </body>
 
-<img src="front.png" width="100%">
+<img src="front.png" width="100%" onclick="speak()">
 </body>
 </html>
