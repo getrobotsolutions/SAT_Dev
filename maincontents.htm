@@ -48,15 +48,7 @@ function JSMain()
 //--------------------------------------------------------------------------
 //-- Flash -> html : Flash에서 선택한 Movie를 html에서 Play 
 //--------------------------------------------------------------------------
-function FC_ChangeAdMovieHtml(strIdx)
-{
-	var movieObj = document.getElementById('MediaPlayer');
-	if(strIdx == "1") movieObj.src = "Movie/main1.mp4";
-	if(strIdx == "2") movieObj.src = "Movie/main2.mp4";
-	if(strIdx == "3") movieObj.src = "Movie/main3.mp4";
-	if(strIdx == "4") movieObj.src = "Movie/main4.mp4";
-	movieObj.play();
-}
+
 
 
 function speak()
@@ -68,7 +60,7 @@ function speak()
 </head>
 
 
-</body>
+</body onload="JSMain()">
 
 <img src="front.png" width="100%" onclick="speak()">
 </body>
